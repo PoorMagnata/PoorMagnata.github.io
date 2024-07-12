@@ -1,0 +1,36 @@
+<html>
+<body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://poormagnata.github.io/finder/">teste</a></h1>
+      
+
+      <h1 id="about">About</h1>
+<p>This program was 100% made on Python 3.12.4 by PoorMagnata (https://github.com/poormagnata/finder).
+License: GNU GPL 3</p>
+
+<p>About: This program was made for you to find your applications on Linux.</p>
+
+<p>How does it works: The program will find all the files inside all the paths of your $PATH variable and will display on the screen for you. It can be a hundred times more faster and easier than typing “ls” on all your applications inside the paths on the $PATH variable, and using “grep” on those. This program is also exclude repeated files that are inside different locations on $PATH from the listing.</p>
+
+<p>Use: finder <argument> </argument></p><search>   OR   finder <search>
+     (!) Only one word by search. Instead, you can use GREP: finder <argument> | grep "search"</argument></search></search><p></p>
+
+<p>Available arguments: No arguments (Displays the list in a list format); -h –help (Shows this screen); -g –grid (Displays the list in grid format); -k –kompakt (Displays the list in just one line).</p>
+
+<p>Tip: If some program is missing from the list, just try to execute finder with superuser privileges (sudo finder).</p>
+
+<h1 id="installing">Installing</h1>
+<p>Copy and paste this on your terminal:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "'finder' is installing...\n\n\n"&amp;&amp;cd ~/Downloads/&amp;&amp;sudo rm -rf PoorMagnataFinder&amp;&amp;git clone https://github.com/PoorMagnata/finder PoorMagnataFinder&amp;&amp;cd PoorMagnataFinder&amp;&amp;sudo chmod +x finder.py&amp;&amp;if [ -f /usr/bin/finder ];then echo "\n\n\n'finder' will not be installed because there is already a program called 'finder' inside your /usr/bin/finder. Use 'rm -rf /usr/bin/finder' to fix it if you know what you are doing.\n\n\nFinished with an error, 'finder' was not installed.";else sudo mv -vn finder.py /usr/bin/finder &amp;&amp; echo "\n\n\n'finder' was sucessfully installed.";fi;
+</code></pre></div></div>
+
+<h1 id="uninstalling">Uninstalling</h1>
+<p>Copy and paste this on your terminal:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "'finder' is being uninstalled...\n\n\n"&amp;&amp;sudo rm -rf /usr/bin/finder&amp;&amp;sudo rm -rf ~/Downloads/PoorMagnataFinder&amp;&amp;echo "\n\n\n'finder' sucessfully uninstalled from your system."
+</code></pre></div></div>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray"></div>
+</html>
